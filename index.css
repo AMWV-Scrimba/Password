@@ -19,16 +19,20 @@
   height: 400px;
   border-radius: 5px;
   display: flex;
+  align-items: center;
   justify-content: center;
+  gap: 2rem;
+  flex-direction: column;
 
 }
 
-.box {
+.text-box {
   display: flex;
   gap: 2rem;
-  align-items: center;
+  align-items: rigth;
   justify-content: center;
   flex-direction: column;
+
   font-family: "Inter";
   color: white;
 }
@@ -44,6 +48,7 @@ h1 {
 
 h2 {
   font-size: 1.2rem;
+  font-weight: 200;
 }
 
 button {
@@ -60,4 +65,24 @@ button {
 
 hr {
   width: 100%;
+  border: 1px solid #2F3E53;
+}
+
+.password-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-content: center;
+  flex-direction: row;
+  font-family: "Inter";
+
+}
+
+.password {
+  height: 1.5rem;
+  width: 10rem;
+  background-color: #2F3E53;
+  border: 1px solid red;
+
+
 }
