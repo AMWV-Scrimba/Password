@@ -14,12 +14,13 @@
 
 .container {
   margin: 3rem auto;
+  padding: 4rem;
   background-color: #1F2937;
   width: 600px;
   height: 400px;
   border-radius: 5px;
   display: flex;
-  align-items: center;
+  align-items: right;
   justify-content: center;
   gap: 2rem;
   flex-direction: column;
@@ -29,10 +30,7 @@
 .text-box {
   display: flex;
   gap: 2rem;
-  align-items: rigth;
-  justify-content: center;
   flex-direction: column;
-
   font-family: "Inter";
   color: white;
 }
@@ -70,19 +68,21 @@ hr {
 
 .password-box {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  justify-content: center;
-  flex-direction: row;
+  height: 2rem;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
   font-family: "Inter";
 
 }
 
 .password {
-  height: 1.5rem;
-  width: 10rem;
   background-color: #2F3E53;
-  border: 1px solid red;
+  border: 1px solid #2F3E53;
+  border-radius: 5px;
+  text-align: center;
+  color: #55F991;
+  align-content: center;
 
 
 }
