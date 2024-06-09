@@ -17,7 +17,7 @@
           <h1 class="green">random password</h1>
           <h2>Never use an insecure password again</h2>
         </div>
-        <div class="button" onclick="generatePasswords()">
+        <div class="generate-button" onclick="generatePasswords()">
           <button>Generate passwords</button>
         </div>
         <hr />
@@ -25,6 +25,13 @@
       <div class="password-box">
         <div class="password" id="password1"></div>
         <div class="password" id="password2"></div>
+        <div class="save-button" onclick="copyPassword1()">
+            <button>Copy the password</button>
+          </div>
+          <div class="save-button" onclick="copyPassword2()">
+            <button>Copy the password</button>
+          </div>
+        </div>
       </div>
     </div>
     <script src="index.js"></script>

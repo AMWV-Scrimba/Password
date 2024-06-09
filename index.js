@@ -3,11 +3,10 @@ const characters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", 
     "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "~", "`", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "-",
     "+", "=", "{", "[", "}", "]", ",", "|", ":", ";", "<", ">", ".", "?", "/"];
 
-
+let password1 = document.getElementById("password1")
+let password2 = document.getElementById("password2")
 
 function generatePasswords() {
-    let password1 = document.getElementById("password1");
-    let password2 = document.getElementById("password2");
     let password1Content = "";
     let password2Content = "";
     for (let i = 0; i < 16; i++) {
@@ -16,4 +15,24 @@ function generatePasswords() {
     }
     password1.textContent = password1Content;
     password2.textContent = password2Content;
+
 }
+
+function copyPassword1() {
+    let copyText = document.getElementById("password1");
+    navigator.clipboard.writeText(copyText.textContent);
+
+}
+
+function copyPassword2() {
+    let copyText = document.getElementById("password2");
+    navigator.clipboard.writeText(copyText.textContent);
+
+}
+
+
+
+
+
+
+
