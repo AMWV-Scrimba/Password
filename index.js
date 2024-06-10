@@ -21,14 +21,32 @@ function generatePasswords() {
 function copyPassword1() {
     let copyText = document.getElementById("password1");
     navigator.clipboard.writeText(copyText.textContent);
+    let copiedSpan = document.getElementById("copied1");
+    // To show the element
+    copiedSpan.style.visibility = "visible";
 
+    // To hide the element again
+    setTimeout(() => {
+        copiedSpan.style.visibility = "hidden";
+    }, 2000); // Adjust the time as needed
 }
 
 function copyPassword2() {
     let copyText = document.getElementById("password2");
     navigator.clipboard.writeText(copyText.textContent);
+    let copiedSpan = document.getElementById("copied2");
+    // To show the element
+    copiedSpan.style.visibility = "visible";
 
+    // To hide the element again
+    setTimeout(() => {
+        copiedSpan.style.visibility = "hidden";
+    }, 2000); // Adjust the time as needed
 }
+
+
+
+
 
 
 

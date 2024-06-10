@@ -68,7 +68,7 @@ hr {
 
 .password-box {
   display: grid;
-  height: 5rem;
+  height: 5.5rem;
   width: 100%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -104,4 +104,16 @@ hr {
 button:hover {
   transform: scale(1.05);
   transition: 0.3s;
+}
+
+
+#copied1,
+#copied2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1rem;
+  visibility: hidden;
+  color: #55F991;
+  font-size: 0.8rem;
 }
